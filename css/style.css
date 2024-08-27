@@ -5,12 +5,16 @@ body{
     font-family: montserrat, sans-serif, Arial;
 }
 
+/*HEADER*/
+
 .header{
     background-color: #000d;
-    min-height: 125px;
+    min-height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
     container-name: header;
     container-type: inline-size;
 }
@@ -70,7 +74,6 @@ body{
 
 @container header (max-width: 800px){
 
-
     .nav-menu{
         display: none;
         background-color: #000a;
@@ -98,4 +101,21 @@ body{
         left: 50px;
     }
     
+}
+
+/*FIN HEADER*/
+
+
+
+
+
+/*FOOTER*/
+.footer{
+    background-color: #000;
+    min-height: 100px;
+    color: #fff;
+    padding: 20px;
+}
+.copiright{
+    text-align: center;
 }
