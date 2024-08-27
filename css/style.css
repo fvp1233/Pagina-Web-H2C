@@ -6,11 +6,27 @@ body{
 }
 
 .header{
-    background-color: #000c;
-    min-height: 150px;
+    background-color: #000d;
+    min-height: 125px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    container-name: header;
+    container-type: inline-size;
+}
+
+.checkbox-menu{
+    display: none;
+}
+
+.checkbox-menu:checked ∼ .nav-menu{
+    display: none;
+    color: aqua;
+}
+
+.menu-hamburguesa{
+    color: #fff;
+    font-size: 3em;
 }
 
 .nav-menu{
@@ -24,6 +40,17 @@ body{
 .link-menu{
     text-decoration: none;
     color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.link-menu:hover{
+    background-color: #f008;
+}
+
+.link-menu:active{
+    background-color: #f005;
 }
 
 .container-logo{
@@ -33,5 +60,11 @@ body{
 }
 
 .logo{
-    width: 120px;
+    width: 80px;
+}
+
+/*MEDIA QUERIES DEL HEADER*/
+
+@container header(max-width: 760px){
+
 }
