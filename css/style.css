@@ -19,7 +19,7 @@ body{
     display: none;
 }
 
-.checkbox-menu:checked ∼ .nav-menu{
+.checkbox-menu:checked ~ .nav-menu {
     display: none;
     color: aqua;
 }
@@ -65,6 +65,9 @@ body{
 
 /*MEDIA QUERIES DEL HEADER*/
 
-@container header(max-width: 760px){
+@container header (max-width: 800px){
 
+    .nav-menu{
+        display: none;
+    }
 }
