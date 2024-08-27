@@ -1,0 +1,124 @@
+body{
+    background-color: #bbb;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat, sans-serif, Arial;
+}
+
+.header{
+    background-color: #000d;
+    min-height: 125px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    container-name: header;
+    container-type: inline-size;
+}
+
+.checkbox-menu{
+    display: none;
+}
+
+.checkbox-menu:checked ∼ .nav-menu{
+    display: none;
+    color: aqua;
+}
+
+.menu-hamburguesa{
+    color: #fff;
+    font-size: 3em;
+}
+
+.nav-menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 3;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.link-menu:hover{
+    background-color: #f008;
+}
+
+.link-menu:active{
+    background-color: #f005;
+}
+
+.container-logo{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 80px;
+}
+
+/*MEDIA QUERIES DEL HEADER*/
+
+@container header(max-width: 760px){
+
+}
+
+.containerInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:40px auto 0 auto;
+    border: solid 1px;
+    width: auto;
+    
+}
+
+
+
+.conteinerH2C{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    border: solid 1px;
+    
+    
+}
+
+.conteinerH2C h2 {
+
+    font-size: 40px;
+    font-family: montserrat, sans-serif, Arial;
+   
+}
+
+.conteinerH2C h3 {
+    font-size: 25px;
+    font-family: montserrat, sans-serif, Arial;
+    color: red;
+    text-decoration: underline;
+   
+}
+
+.imgH2c img {
+    width: 280px;
+    
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 50%;
+}
+
+.infoH2C p {
+    font-size: 20px;
+    font-family: montserrat, sans-serif, Arial;
+    border: solid 1px;
+}
