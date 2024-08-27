@@ -34,6 +34,7 @@ body{
 .menu-hamburguesa{
     color: #fff;
     font-size: 3em;
+    transition: 1s;
 }
 
 .nav-menu{
@@ -93,6 +94,17 @@ body{
 
     .menu-hamburguesa{
         display: block;
+    }
+    .menu-hamburguesa::selection{
+        background-color: transparent;
+    }
+    .menu-hamburguesa:hover{
+        transition: .5s;
+        font-size: 3.3em;
+    }
+    .menu-hamburguesa:active{
+        transition: .1s;
+        color: #f007;
     }
     .container-logo{
         flex-grow: 0;
