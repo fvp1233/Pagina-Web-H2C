@@ -19,10 +19,13 @@ body{
     display: none;
 }
 
-.checkbox-menu:checked ~ .nav-menu {
+.menu-hamburguesa{
     display: none;
-    color: aqua;
+    font-weight: 500;
+    position: absolute;
+    right: 50px;
 }
+
 
 .menu-hamburguesa{
     color: #fff;
@@ -67,7 +70,32 @@ body{
 
 @container header (max-width: 800px){
 
+
     .nav-menu{
         display: none;
+        background-color: #000a;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        top: 0;
     }
+    .checkbox-menu:checked ~ .nav-menu{
+        display: flex;
+    }
+
+    .menu-hamburguesa{
+        display: block;
+    }
+    .container-logo{
+        flex-grow: 0;
+        display: block;
+        position: absolute;
+        left: 50px;
+    }
+    
 }
