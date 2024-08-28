@@ -1,29 +1,30 @@
-body{
-    background-color: #bbb;
+body {
+    background-color: #ddd;
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif, Arial;
 }
 
-/*HEADER*/
+/***************HEADER**************/
 
-.header{
+.header {
     background-color: #000d;
     min-height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: sticky;
+    z-index: 10;
     top: 0;
     container-name: header;
     container-type: inline-size;
 }
 
-.checkbox-menu{
+.checkbox-menu {
     display: none;
 }
 
-.menu-hamburguesa{
+.menu-hamburguesa {
     display: none;
     font-weight: 500;
     position: absolute;
@@ -31,13 +32,13 @@ body{
 }
 
 
-.menu-hamburguesa{
+.menu-hamburguesa {
     color: #fff;
     font-size: 3em;
     transition: 1s;
 }
 
-.nav-menu{
+.nav-menu {
     margin: 0;
     padding: 0;
     display: flex;
@@ -45,7 +46,7 @@ body{
     flex-grow: 3;
 }
 
-.link-menu{
+.link-menu {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
@@ -53,29 +54,29 @@ body{
     transition: .4s;
 }
 
-.link-menu:hover{
+.link-menu:hover {
     background-color: #f008;
 }
 
-.link-menu:active{
+.link-menu:active {
     background-color: #f005;
 }
 
-.container-logo{
+.container-logo {
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
 
-.logo{
+.logo {
     width: 80px;
 }
 
-/*MEDIA QUERIES DEL HEADER*/
+/*************MEDIA QUERIES DEL HEADER*************/
 
-@container header (max-width: 800px){
+@container header (max-width: 800px) {
 
-    .nav-menu{
+    .nav-menu {
         display: none;
         background-color: #000a;
         height: 100vh;
@@ -84,50 +85,169 @@ body{
         left: 0;
         z-index: -1;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
         top: 0;
     }
-    .checkbox-menu:checked ~ .nav-menu{
+
+    .checkbox-menu:checked~.nav-menu {
         display: flex;
     }
 
-    .menu-hamburguesa{
+    .menu-hamburguesa {
         display: block;
     }
-    .menu-hamburguesa::selection{
+
+    .menu-hamburguesa::selection {
         background-color: transparent;
     }
-    .menu-hamburguesa:hover{
+
+    .menu-hamburguesa:hover {
         transition: .5s;
         font-size: 3.3em;
     }
-    .menu-hamburguesa:active{
+
+    .menu-hamburguesa:active {
         transition: .1s;
         color: #f007;
     }
-    .container-logo{
+
+    .container-logo {
         flex-grow: 0;
         display: block;
         position: absolute;
         left: 50px;
     }
-    
+
 }
 
-/*FIN HEADER*/
+/***************FIN HEADER**********/
+
+/****************MAIN***************/
+
+/*********SECCION PRINCIPAL*********/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.main-section {
+    display: flex;
+    height: 60vh;
+    background-color: #c12e21;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titles-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    width: 90%;
+}
+
+.h2-titles-main {
+    color: #ffd898;
+    font-weight: 600;
+}
+
+.description-main {
+    color: #fff;
+    text-align: justify;
+    width: 75%;
+}
+
+.image-main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    max-width: 800px;
+    width: 50%;
+}
+
+.img-main {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-main:hover{
+    opacity: 0.8;
+}
+
+/*************MEDIA QUERIES DE LA SECCION PRINCIPAL*************/
+
+@media screen and (max-width: 875px) {
+
+    .titles-main {
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .description-main {
+        width: 70%;
+    }
+
+    .image-main-container {
+        max-height: 400px;
+        min-width: 70%;
+    }
+
+    .main-section {
+        height: 75vh;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 625px) {
 
 
+    .main-section {
+        height: 85vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image-main-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px 5px;
+    }
+
+    .img-main:first-child{
+        grid-column-end: span 3;
+    }
+
+}
+
+/************FIN SECCION PRINCIPAL*************/
 
 
 
 /***************FOOTER**************/
-.footer{
+.footer {
     background-color: #000;
     min-height: 100px;
     color: #fff;
     padding: 20px;
 }
-.copiright{
+
+.copiright {
     text-align: center;
 }
