@@ -8,7 +8,7 @@ body {
 /***************HEADER**************/
 
 .header {
-    background-color: #000d;
+    background-color: #000;
     min-height: 100px;
     display: flex;
     justify-content: space-around;
@@ -18,6 +18,21 @@ body {
     top: 0;
     container-name: header;
     container-type: inline-size;
+    animation: header-scroll both;
+    animation-timeline: scroll();
+    animation-range: contain 0 cover 40%;
+}
+
+@keyframes header-scroll {
+    from{
+        background-color: #000;
+        padding: 20px;
+    }
+
+    to{
+        background-color: #000d;
+        padding: 0;
+    }
 }
 
 .checkbox-menu {
@@ -176,7 +191,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5px;
-    max-width: 800px;
+    max-width: 500px;
     width: 50%;
 }
 
@@ -265,6 +280,9 @@ h1 {
 .tarjet{
     max-width: 80%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tarjet h3{
