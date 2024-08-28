@@ -210,7 +210,7 @@ h1 {
     }
 
     .main-section {
-        height: 75vh;
+        height: 80vh;
         flex-direction: column;
     }
 
@@ -238,7 +238,61 @@ h1 {
 
 /************FIN SECCION PRINCIPAL*************/
 
+/**************SERVICIOS SECCION***************/
 
+.services-section{
+    padding: 20px;
+    container-type: inline-size;
+    container-name: services-section;
+}
+
+.h2-services-section{
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    padding: 50px 10px;
+    box-sizing: border-box;
+}
+
+.container-tarjet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 50px 5px;
+}
+
+.tarjet{
+    max-width: 80%;
+    text-align: justify;
+}
+
+.tarjet h3{
+    text-align: center;
+}
+
+.img-tarjet{
+    max-width: 100%;
+}
+
+/*************MEDIA QUERIES DE SERVICIOS*************/
+
+@container services-section (max-width: 625px){
+
+    .container-tarjet{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/***************FIN SERVICIOS****************/
+
+/**************SECCION AMARILLA**************/
+
+.yellow-section{
+    background-color: #ffb235;
+    min-height: 300px;
+}
 
 /***************FOOTER**************/
 .footer {
