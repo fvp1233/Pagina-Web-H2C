@@ -1,10 +1,11 @@
 body{
-    background-color: #bbb;
+    background-color: #ddd;;
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif, Arial;
 }
 
+/* HEADER*/
 .header{
     background-color: #000d;
     min-height: 125px;
@@ -69,12 +70,15 @@ body{
 
 }
 
+/*BODY*/
+
+/*Seccion donde se encuentra la informacion de quien es H2C*/
+
 .containerInfo {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin:40px auto 0 auto;
-    border: solid 1px;
+    
     width: auto;
     
 }
@@ -85,28 +89,23 @@ body{
     display: flex;
     flex-direction: column;
     align-items:start;
-    border: solid 1px;
     
     
 }
 
 .conteinerH2C h2 {
-
     font-size: 40px;
-    font-family: montserrat, sans-serif, Arial;
-   
 }
 
 .conteinerH2C h3 {
     font-size: 25px;
-    font-family: montserrat, sans-serif, Arial;
     color: red;
     text-decoration: underline;
    
 }
 
 .imgH2c img {
-    width: 280px;
+    max-width: 320px;
     
 }
 
@@ -119,6 +118,123 @@ body{
 
 .infoH2C p {
     font-size: 20px;
+    text-align: justify;
+}
+
+.infoH2C {
+    padding-bottom: 20px;
+}
+
+/* Media QUERY de la seccion de informacion de H2C*/ 
+@media (max-width: 600px) {
+    .containerInfo {
+        flex-direction: column;
+        
+    
+    }
+
+        .conteinerH2C{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            border: solid 1px;       
+        }
+        
+        .conteinerH2C h2 {
+        
+            font-size: 50px;
+           
+        }
+        
+        .conteinerH2C h3 {
+            font-size: 27px;
+            color: red;
+            text-decoration: underline;
+           
+        }
+        
+        .imgH2c img {
+            width: 280px;
+            
+        }
+        
+        .txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            max-width: 85%;
+        }
+        
+        .infoH2C p {
+            font-size: 20px;
+            
+        }
+           
+    }   
+
+
+/* Seccion Informacion de relacion entre H2C y nostros*/
+
+.h2relacion{
+    padding-top: 20px;
+}
+
+.container1 {
+    background-color:#c12e21 ;
+}
+
+.container1 h2 {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container1 p {
+    color: #ffffff;
     font-family: montserrat, sans-serif, Arial;
-    border: solid 1px;
+}
+
+.relacion {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgrelacion  {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgrelacion img {
+    width: 80%;
+}
+
+.txtrelacion {
+    width: 50%;
+    padding: 30px;
+    text-align: justify;
+}
+
+.txtrelacion1 {
+    font-size: 18px;
+}
+
+.txtrelacion2 {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .relacion {
+       
+    flex-direction: column;
+    align-items: center;
+    }
+    .imgrelacion  {
+        width: 100%;
+    }
+    .txtrelacion {
+        width: 80%;
+            }
 }
