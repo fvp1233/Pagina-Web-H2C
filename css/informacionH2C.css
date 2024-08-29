@@ -5,70 +5,8 @@ body{
     font-family: montserrat, sans-serif, Arial;
 }
 
-/* HEADER*/
-.header{
-    background-color: #000d;
-    min-height: 125px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    container-name: header;
-    container-type: inline-size;
-}
 
-.checkbox-menu{
-    display: none;
-}
 
-.checkbox-menu:checked ∼ .nav-menu{
-    display: none;
-    color: aqua;
-}
-
-.menu-hamburguesa{
-    color: #fff;
-    font-size: 3em;
-}
-
-.nav-menu{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 3;
-}
-
-.link-menu{
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: .4s;
-}
-
-.link-menu:hover{
-    background-color: #f008;
-}
-
-.link-menu:active{
-    background-color: #f005;
-}
-
-.container-logo{
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.logo{
-    width: 80px;
-}
-
-/*MEDIA QUERIES DEL HEADER*/
-
-@container header(max-width: 760px){
-
-}
 
 /*BODY*/
 
@@ -78,8 +16,9 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
     width: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
     
 }
 
@@ -238,3 +177,38 @@ body{
         width: 80%;
             }
 }
+.navbar-nav .nav-item {
+    margin-right: 95px; /* Ajusta el valor según la separación deseada */
+    margin-left: 50px;
+  }
+  
+   .navbar-custom {
+    background-color: #000000; /* Negro completamente oscuro 
+  }
+
+  
+  
+ 
+
+  
+
+  .navbar-custom .nav-link {
+    color: #ffffff; /* Color blanco para el texto */
+  }
+  
+  
+  
+  .navbar-custom .dropdown-menu {
+    background-color: #000000; /* Fondo negro para el menú desplegable */
+  }
+  
+  .navbar-custom .dropdown-item {
+    color: #ffffff; /* Color blanco para los elementos del menú desplegable */
+  }
+  
+  .navbar-custom .dropdown-item:hover,
+  .navbar-custom .dropdown-item:focus {
+    color: #cccccc; /* Blanco más claro para los elementos del menú desplegable al pasar el cursor */
+    background-color: #333333; /* Fondo gris oscuro para los elementos al pasar el cursor */
+  }
+
