@@ -251,6 +251,9 @@ h1 {
     padding: 20px;
     container-type: inline-size;
     container-name: services-section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .h2-services-section{
@@ -259,12 +262,13 @@ h1 {
     font-weight: 600;
     padding: 50px 10px;
     box-sizing: border-box;
+    font-size: 2em;
 }
 
 .container-tarjet{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(200px, 500px));
+    grid-template-rows: minmax(300px, 700px);
     justify-items: center;
     gap: 50px 5px;
 }
@@ -295,12 +299,14 @@ h1 {
 .tarjet h3{
     text-align: center;
     font-size: 1.5em;
+    color: #c12e21;
 }
 
 .tarjet p{
     font-weight: 500;
     line-height: 1.5;
-    padding: 15px;
+    font-size: 0.9em;
+    padding: 0px 25px;
 }
 
 .container-img-tarjet{
@@ -319,6 +325,15 @@ h1 {
 
 /*************MEDIA QUERIES DE SERVICIOS*************/
 
+@container services-section (max-width: 1350px){
+
+    .container-tarjet{
+        grid-template-columns: repeat(2, minmax(200px, 500px));
+        grid-template-rows:repeat(2, minmax(300px, 650px));
+    }
+
+}
+
 @container services-section (max-width: 625px){
 
     .container-tarjet{
@@ -332,8 +347,8 @@ h1 {
 /***********INFORMACION H2C SECCION**********/
 
 .H2C-information-section{
-    background-color: #ffb235;
-    min-height: 400px;
+    background-color: #fff;
+    min-height: 500px;
     display: flex;
     align-items: center;
     container-type: inline-size;
@@ -406,7 +421,7 @@ h1 {
     height: 200%;
     position: absolute;
     border-radius: 50%;
-    z-index: -1;
+    z-index: -1;    
     top: 100px;
     left: 50px;
     transition: left 1s, top 1s;
