@@ -1,132 +1,10 @@
-body {
+.body {
     background-color: #ddd;
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif, Arial;
 }
 
-/***************HEADER**************/
-
-.header {
-    background-color: #000;
-    min-height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    container-name: header;
-    container-type: inline-size;
-    animation: header-scroll both;
-    animation-timeline: scroll();
-    animation-range: contain 0 cover 30%;
-}
-
-
-.checkbox-menu {
-    display: none;
-}
-
-.menu-hamburguesa {
-    display: none;
-    font-weight: 500;
-    position: absolute;
-    right: 50px;
-}
-
-
-.menu-hamburguesa {
-    color: #fff;
-    font-size: 3em;
-    transition: 1s;
-}
-
-.nav-menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 3;
-}
-
-.link-menu {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: .4s;
-}
-
-.link-menu:hover {
-    background-color: #f008;
-}
-
-.link-menu:active {
-    background-color: #f005;
-}
-
-.container-logo {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
-    width: 80px;
-}
-
-/*************MEDIA QUERIES DEL HEADER*************/
-
-@container header (max-width: 800px) {
-
-    .nav-menu {
-        display: none;
-        background-color: #000a;
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        left: 0;
-        z-index: -1;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        top: 0;
-    }
-
-    .checkbox-menu:checked~.nav-menu {
-        display: flex;
-    }
-
-    .menu-hamburguesa {
-        display: block;
-    }
-
-    .menu-hamburguesa::selection {
-        background-color: transparent;
-    }
-
-    .menu-hamburguesa:hover {
-        transition: .5s;
-        font-size: 3.3em;
-    }
-
-    .menu-hamburguesa:active {
-        transition: .1s;
-        color: #f007;
-    }
-
-    .container-logo {
-        flex-grow: 0;
-        display: block;
-        position: absolute;
-        left: 50px;
-    }
-
-}
-
-/***************FIN HEADER**********/
 
 /****************MAIN***************/
 
@@ -300,6 +178,7 @@ h1 {
     text-align: center;
     font-size: 1.5em;
     color: #c12e21;
+    padding: 15px 0px;
 }
 
 .tarjet p{
@@ -402,7 +281,7 @@ h1 {
 }
 
 .button-information{
-    padding: 0 30px;
+    padding: 15px 30px;
     border-radius: 20px;
     font-size: 1.2em;
     background-color: #c12e21;
