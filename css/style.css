@@ -85,18 +85,18 @@ h1 {
     width: 80%;
 }
 
-.link-main{
+.link-main {
     text-decoration: none;
     border-radius: 40px;
 }
 
-.container-link-main{
+.container-link-main {
     display: flex;
     justify-content: center;
     width: 60%;
 }
 
-.link-main:hover{
+.link-main:hover {
     background-color: #da2817;
 }
 
@@ -104,17 +104,18 @@ h1 {
 
 @media screen and (max-width: 875px) {
 
-    h1{
+    h1 {
         font-size: 3em;
         text-align: center;
         width: 100%;
     }
 
-    .h2-titles-main{
+    .h2-titles-main {
         text-align: center;
         width: 100%;
     }
-    .container-link-main{
+
+    .container-link-main {
         width: 100%;
     }
 
@@ -127,7 +128,7 @@ h1 {
 
 
     .main-section {
-        background: linear-gradient(to bottom, #000a , #000a), url("../img/fondo-main.png");
+        background: linear-gradient(to bottom, #000a, #000a), url("../img/fondo-main.png");
         background-size: cover;
         height: 90vh;
         flex-direction: column;
@@ -198,7 +199,7 @@ h1 {
     box-shadow: 0 0 20px #0006;
     animation: opacity 1s linear both;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0% cover 20%;
     background-color: #fff;
     transition: .7s;
 }
@@ -247,7 +248,7 @@ h1 {
 
 }
 
-@container services-section (max-width: 625px) {
+@container services-section (max-width: 675px) {
 
     .container-tarjet {
         grid-template-columns: 1fr;
@@ -286,10 +287,18 @@ h1 {
 .h3-container-information {
     font-size: 1.8em;
     color: #c12e21;
+    position: relative;
+    animation: opacity 1s linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
 }
 
 .img-h2c-information {
     width: 50%;
+    position: relative;
+    animation: opacity 1s linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
 }
 
 .container-information {
@@ -309,6 +318,10 @@ h1 {
     font-weight: 500;
     font-family: montserrat, sans-serif;
     line-height: 1.5;
+    position: relative;
+    animation: opacity 1s linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
 }
 
 .container-information-button {
@@ -325,12 +338,16 @@ h1 {
     z-index: 10;
     transition: color 1s;
     letter-spacing: 1.3px;
+    animation: opacity 1s linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
 }
 
-.button-informations{
+.button-informations {
     border-radius: 20px;
 
 }
+
 
 .button-informations::before {
     content: '';
@@ -394,15 +411,27 @@ h1 {
 
 
 /***************FOOTER**************/
-.footer {
-    background-color: #000;
-    min-height: 100px;
-    color: #fff;
-    padding: 20px;
+
+.container-redes-link{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
 }
 
-.copiright {
-    text-align: center;
+.link-redes {
+    background-color: #ac2bac;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+.link-redes:hover{
+    filter: brightness(50%);
 }
 
 
@@ -424,10 +453,16 @@ h1 {
 
 @keyframes opacity {
     from {
-        opacity: 0.4;
+        opacity: 0.2;
+        top: 100px;
+    }
+
+    50%{
+        top: 50px;
     }
 
     to {
         opacity: 1;
+        top: 0;
     }
 }
