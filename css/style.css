@@ -50,10 +50,9 @@
 .main-section {
     height: 90vh;
     width: 100%;
-    background: linear-gradient(to right, #000d 30%, transparent), url("../img/fondo-main.png");
-    background-position: center;
+    background: linear-gradient(to right, #000d 30%, transparent), url("../img/Red\ Modern\ Texture\ Background\ Online\ Delivery\ -\ Banner.png");
+    background-position: right;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     font-family: montserrat, sans-serif;
@@ -73,7 +72,7 @@
 }
 
 h1 {
-    color: #f51400;
+    color: #fff;
     font-size: 4em;
     width: 90%;
 }
@@ -87,7 +86,7 @@ h1 {
 
 .link-main {
     text-decoration: none;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .container-link-main {
@@ -128,9 +127,11 @@ h1 {
 
 
     .main-section {
-        background: linear-gradient(to bottom, #000a, #000a), url("../img/fondo-main.png");
+        background: linear-gradient(to bottom, #000a, #000a), url("../img/Red\ Modern\ Texture\ Background\ Online\ Delivery\ -\ Banner.png");
+        background-position: right;
         background-size: cover;
         height: 90vh;
+        justify-content: center;
         flex-direction: column;
     }
 
@@ -180,18 +181,17 @@ h1 {
 
 .container-tarjet {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 500px));
-    grid-template-rows: minmax(300px, 700px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     gap: 50px 5px;
 }
 
 .tarjet {
-    max-width: 80%;
+    max-width: 70%;
     position: relative;
     text-align: justify;
     display: flex;
-    bottom: 0;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
@@ -201,26 +201,22 @@ h1 {
     animation-timeline: view();
     animation-range: cover 0% cover 20%;
     background-color: #fff;
-    transition: .7s;
 }
 
-.tarjet:hover {
-    bottom: 20px;
-    transition: .5s;
-}
 
 .tarjet h3 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #c12e21;
     padding: 15px 0px;
+    width: 90%;
 }
 
 .tarjet p {
     font-weight: 500;
     line-height: 1.5;
     font-size: 0.9em;
-    padding: 0px 25px;
+    padding: 0 30px
 }
 
 .container-img-tarjet {
@@ -231,7 +227,7 @@ h1 {
 
 .img-tarjet {
     width: 100%;
-    height: 275px;
+    height: 100%;
     object-fit: cover;
     filter: brightness(90%);
 }
@@ -241,9 +237,11 @@ h1 {
 
 @container services-section (max-width: 1350px) {
 
+
+
     .container-tarjet {
-        grid-template-columns: repeat(2, minmax(200px, 500px));
-        grid-template-rows: repeat(2, minmax(300px, 650px));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
 }
@@ -338,21 +336,20 @@ h1 {
     z-index: 10;
     transition: color 1s;
     letter-spacing: 1.3px;
-    animation: opacity 1s linear both;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
 }
 
 .button-informations {
     border-radius: 20px;
-
+    animation: opacity 1s linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
 }
 
 
 .button-informations::before {
     content: '';
     display: block;
-    background-color: #ffb23599;
+    background-color: #ddd;
     width: 150%;
     height: 200%;
     position: absolute;
