@@ -6,6 +6,39 @@ body{
 }
 
 
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-custom {
+    background-color: #000000;
+}
+
+
+
+.navbar-custom .dropdown-menu {
+    background-color: #000000;
+    /* Fondo negro para el menú desplegable */
+}
+
+.navbar-custom .dropdown-item {
+    color: #ffffff;
+    /* Color blanco para los elementos del menú desplegable */
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: #cccccc;
+    /* Blanco más claro para los elementos del menú desplegable al pasar el cursor */
+    background-color: #333333;
+    /* Fondo gris oscuro para los elementos al pasar el cursor */
+}
+
+
+
+
+
 
 
 /*BODY*/
@@ -76,7 +109,7 @@ body{
             display: flex;
             flex-direction: column;
             align-items:center;
-            border: solid 1px;       
+                 
         }
         
         .conteinerH2C h2 {
@@ -112,103 +145,140 @@ body{
     }   
 
 
-/* Seccion Informacion de relacion entre H2C y nostros*/
-
-.h2relacion{
-    padding-top: 20px;
+.separacion {
+    text-align: center;
 }
-
-.container1 {
-    background-color:#c12e21 ;
-}
-
-.container1 h2 {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.separacion h2 {
+    font-size: 30px;
+    color: white;
     
 }
 
-.container1 p {
-    color: #ffffff;
-    font-family: montserrat, sans-serif, Arial;
+
+
+
+.container1 {
+    background-color:#c12e21 ;
+    padding-top: 40px;
+    padding-bottom: 20px;
+} 
+
+
+.txtRelacion{
+    color: white;
 }
 
-.relacion {
+.txtRelacion h2 {
+    font-size: 30px;
+}
+
+.txtRelacion p {
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+.txtRelacion {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
-.imgrelacion  {
-    width: 50%;
+.imgrelacion{
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 576px){
+    .carousel-inner{
+        display: flex;
+    
+        
+    .carousel-item {
+        display: block;
+        margin-right: 5%;
+        flex: 0 0 calc(100%/4);
+    }
+
+}
+.btndesactivado {
+    display: none;
+}
+
+}
+
+
+
+.carousel-inner{
+    padding: 1em;
+}
+
+
+.imgWrapped {
+    max-width: 100%;
     display: flex;
     justify-content: center;
 }
-
-.imgrelacion img {
-    width: 80%;
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.txtrelacion {
-    width: 50%;
-    padding: 30px;
-    text-align: justify;
+
+/***************FOOTER**************/
+
+.container-redes-link{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
 }
 
-.txtrelacion1 {
-    font-size: 18px;
-}
-
-.txtrelacion2 {
-    font-size: 18px;
-}
-
-@media screen and (max-width: 600px) {
-    .relacion {
-       
-    flex-direction: column;
+.link-redes {
+    background-color: #ac2bac;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    display: flex;
     align-items: center;
-    }
-    .imgrelacion  {
-        width: 100%;
-    }
-    .txtrelacion {
-        width: 80%;
-            }
 }
-.navbar-nav .nav-item {
-    margin-right: 95px; /* Ajusta el valor según la separación deseada */
-    margin-left: 50px;
-  }
-  
-   .navbar-custom {
-    background-color: #000000; /* Negro completamente oscuro 
-  }
+.link-redes:hover{
+    filter: brightness(50%);
+}
+
+
+/*****************ANIMACIONES*****************/
+
+@keyframes header-scroll {
+    from {
+        background-color: #000;
+        padding: 20px;
+    }
+
+    to {
+        background-color: #000d;
+        padding: 0;
+    }
+}
+
+
+
+@keyframes opacity {
+    from {
+        opacity: 0.2;
+        top: 100px;
+    }
+
+    50%{
+        top: 50px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
 
   
-  
- 
-
-  
-
-  .navbar-custom .nav-link {
-    color: #ffffff; /* Color blanco para el texto */
-  }
-  
-  
-  
-  .navbar-custom .dropdown-menu {
-    background-color: #000000; /* Fondo negro para el menú desplegable */
-  }
-  
-  .navbar-custom .dropdown-item {
-    color: #ffffff; /* Color blanco para los elementos del menú desplegable */
-  }
-  
-  .navbar-custom .dropdown-item:hover,
-  .navbar-custom .dropdown-item:focus {
-    color: #cccccc; /* Blanco más claro para los elementos del menú desplegable al pasar el cursor */
-    background-color: #333333; /* Fondo gris oscuro para los elementos al pasar el cursor */
-  }
-
