@@ -1,70 +1,125 @@
 body{
-    background-color: #bbb;
+    background-color: #ddd;
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif, Arial;
+    min-height: 100vh;
 }
 
-.header{
-    background-color: #000d;
-    min-height: 125px;
+.navbar-nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    container-name: header;
-    container-type: inline-size;
 }
 
-.checkbox-menu{
-    display: none;
+.navbar-custom {
+    background-color: #000000;
 }
 
-.checkbox-menu:checked ∼ .nav-menu{
-    display: none;
-    color: aqua;
+
+
+.navbar-custom .dropdown-menu {
+    background-color: #000000;
+    /* Fondo negro para el menú desplegable */
 }
 
-.menu-hamburguesa{
-    color: #fff;
-    font-size: 3em;
+.navbar-custom .dropdown-item {
+    color: #ffffff;
+    /* Color blanco para los elementos del menú desplegable */
 }
 
-.nav-menu{
-    margin: 0;
-    padding: 0;
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: #cccccc;
+    /* Blanco más claro para los elementos del menú desplegable al pasar el cursor */
+    background-color: #333333;
+    /* Fondo gris oscuro para los elementos al pasar el cursor */
+}
+
+.fieldset{
+    margin: 20px;
+}
+
+.form{
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0008;
+    background-color: #ddd;
+}
+
+.form h2{
+    text-align: center;
+}
+
+
+.container-info-personal{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container-input{
+    display: flex;
+    flex-direction: column;
     flex-grow: 3;
+    margin: 10px;
 }
 
-.link-menu{
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: .4s;
+label{
+    font-weight: 500;
 }
 
-.link-menu:hover{
-    background-color: #f008;
-}
 
-.link-menu:active{
-    background-color: #f005;
-}
-
-.container-logo{
-    flex-grow: 1;
+.container-info-contacto{
     display: flex;
+    flex-direction: column;
+}
+
+.txtarea{
+    resize: none;
+    min-height: 150px;
+}
+
+.submit{
+    align-self: end;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+/***************FOOTER**************/
+
+
+.container-redes-link{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
+    justify-items: center;
 }
 
-.logo{
-    width: 80px;
+.link-redes {
+    background-color: #ac2bac;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+.link-redes:hover{
+    filter: brightness(50%);
 }
 
-/*MEDIA QUERIES DEL HEADER*/
-
-@container header(max-width: 760px){
-
+.text-white {
+    text-decoration: none;
 }
