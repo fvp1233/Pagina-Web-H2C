@@ -431,6 +431,9 @@ h1 {
     filter: brightness(50%);
 }
 
+.text-white {
+    text-decoration: none;
+}
 
 /*****************ANIMACIONES*****************/
 
