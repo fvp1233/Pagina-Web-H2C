@@ -339,36 +339,20 @@ h1 {
     letter-spacing: 1.3px;
 }
 
-.button-informations {
+.link-h2c{
+    background-color: #c12e21;
+    padding: 15px 30px;
     border-radius: 20px;
-    animation: opacity 1s linear both;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    letter-spacing: 1.2px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
 }
 
-
-.button-informations::before {
-    content: '';
-    display: block;
-    background-color: #ddd;
-    width: 150%;
-    height: 200%;
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    top: 100px;
-    left: 50px;
-    transition: left 1s, top 1s;
+.link-h2c:hover{
+    background-color: #b00;
 }
 
-.button-informations:hover::before {
-    top: -30px;
-    left: -50px;
-}
-
-.button-informations:hover {
-    color: #000;
-}
 
 /*************MEDIA QUERIES SECCION DE INFORMACION****************/
 
