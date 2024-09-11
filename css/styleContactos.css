@@ -33,6 +33,7 @@ body{
     position: relative;
     bottom: 0;
     transition: bottom 1s;
+    width: 100%;
 }
 
 .container-img-card{
@@ -154,7 +155,7 @@ input{
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .container-cards{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
