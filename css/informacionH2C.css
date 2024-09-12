@@ -6,36 +6,6 @@ body{
 }
 
 
-.navbar-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar-custom {
-    background-color: #000000;
-}
-
-
-
-.navbar-custom .dropdown-menu {
-    background-color: #000000;
-    /* Fondo negro para el menú desplegable */
-}
-
-.navbar-custom .dropdown-item {
-    color: #ffffff;
-    /* Color blanco para los elementos del menú desplegable */
-}
-
-.navbar-custom .dropdown-item:hover,
-.navbar-custom .dropdown-item:focus {
-    color: #cccccc;
-    /* Blanco más claro para los elementos del menú desplegable al pasar el cursor */
-    background-color: #333333;
-    /* Fondo gris oscuro para los elementos al pasar el cursor */
-}
-
-
 
 
 

@@ -1,0 +1,19 @@
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.link:hover{
+    color: #b00 !important;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+

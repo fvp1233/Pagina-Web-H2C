@@ -4,115 +4,153 @@ body{
     padding: 0;
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar-custom {
-    background-color: #000000;
-}
-
-.navbar-custom .dropdown-menu {
-    background-color: #000000;
-    /* Fondo negro para el menú desplegable */
-}
-
-.navbar-custom .dropdown-item {
-    color: #ffffff;
-    /* Color blanco para los elementos del menú desplegable */
-}
-
-.navbar-custom .dropdown-item:hover,
-.navbar-custom .dropdown-item:focus {
-    color: #cccccc;
-    /* Blanco más claro para los elementos del menú desplegable al pasar el cursor */
-    background-color: #333333;
-    /* Fondo gris oscuro para los elementos al pasar el cursor */
-}
 
 /*******************SECCION PRINCIPAL********************/
 
-.window-modal{
-    display: none;
+.wrapper{
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 1200px;
+    gap: 15px;
+    justify-content: space-around;
+}
+p{
+    font-family: montserrat;
+    line-height: 1.5;
+    width: 100%;
     text-align: justify;
-    padding: 15px;
+}
+
+.links-principal-section{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.links-principal-section:first-child{
+    color: #c12e21;
+}
+
+.links-principal-section:hover{
+    opacity: 0.7;
+}
+
+
+aside{
+    width: 30%;
+    height: 400px;
+    padding: 20px;
+    border-radius: 25px;
+}
+aside h2{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #c12e21;
+    text-align: center;
+}
+.lista-indice{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 16px;
+    list-style-type: circle;
+}
+
+.lista-indice li a{
+    font-weight: 500;
+    line-height: 2.5;
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+
+.lista-indice li a:hover{
+    color: #c12e21;
 }
 
 .main{
+    max-width: 60%;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+}
+.section{
+    margin: 20px 0 20px 0;
 }
 
-.payrolls-section{
-    background-color: #000d;
-    height: auto;
+.separator::before{
+    content: '/';
 }
 
-
-.container-buttons{
-    max-width: 80%;
-    padding: 30px;
-    margin: auto;
-    max-height: 500px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, minmax(100px, 200px));
-    justify-items: center;
-    gap: 10px;
+h1{
+    margin: 20px 0 15px 0;
+    font-family: Playfair Display, sans-serif;
+    font-size: 2.7rem;
 }
 h2{
-    text-align: center;
-    color: #c12e21;
+    font-size: 2em;
+    font-family: montserrat, sans-serif;
 }
-.container-h2{
+
+.container-img{
+    width: 100%;
+    margin: 40px 0 40px 0;
+}
+.container-img img{
+    width: 100%;
+}
+
+
+.service-section{
     display: flex;
-    flex-direction: column;
-    color: #fff;
-    justify-content: space-evenly;
-    text-align: justify;
-    width: 80%;
-    grid-column-end: span 1;
-    grid-row-end: span 1;
+    justify-content: center;
 }
 
-.button-payrolls{
-    background-color: transparent;
+.image img{
     width: 100%;
-    height: 100%;
+}
+
+ul li{
+    line-height: 3;
+    font-size: 1.2rem;
+}
+
+.container-redes-link{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+}
+
+.link-redes {
+    background-color: #ac2bac;
+    width: 50px;
+    height: 50px;
     border: none;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+}
+.link-redes:hover{
+    filter: brightness(50%);
 }
 
-.button-payrolls:nth-child(2){
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-column-end: span 1;
-    grid-row-end: span 1;
-}
-.button-payrolls:nth-child(3){
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-column-end: span 1;
-    grid-row-end: span 2;
-}
-.button-payrolls:last-child{
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-column-end: span 2;
-    grid-row-end: span 1;
-}
-
-
-.button-payrolls img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border: solid 1px;
-    border-radius: 5px;
+.text-white {
+    text-decoration: none;
 }
 
 
 
 
+@media screen and (max-width: 1050px) {
+    aside{
+        display: none;
+    }
 
+    .main{
+        max-width: 90%;
+    }
+}

@@ -3,37 +3,9 @@
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif, Arial;
+    scroll-behavior: smooth;
 }
 
-
-.navbar-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar-custom {
-    background-color: #000000;
-}
-
-
-
-.navbar-custom .dropdown-menu {
-    background-color: #000000;
-    /* Fondo negro para el menú desplegable */
-}
-
-.navbar-custom .dropdown-item {
-    color: #ffffff;
-    /* Color blanco para los elementos del menú desplegable */
-}
-
-.navbar-custom .dropdown-item:hover,
-.navbar-custom .dropdown-item:focus {
-    color: #cccccc;
-    /* Blanco más claro para los elementos del menú desplegable al pasar el cursor */
-    background-color: #333333;
-    /* Fondo gris oscuro para los elementos al pasar el cursor */
-}
 
 
 
@@ -50,7 +22,7 @@
 .main-section {
     height: 90vh;
     width: 100%;
-    background: linear-gradient(to right, #000d 30%, transparent), url("../img/Red\ Modern\ Texture\ Background\ Online\ Delivery\ -\ Banner.png");
+    background: linear-gradient(to right, #000d 40%, transparent), url("../img/Red\ Modern\ Texture\ Background\ Online\ Delivery\ -\ Banner.png");
     background-position: right;
     background-size: cover;
     display: flex;
@@ -176,52 +148,51 @@ h1 {
     font-weight: 600;
     padding: 50px 10px;
     box-sizing: border-box;
-    font-size: 2em;
+    font-size: 2.7em;
 }
 
 .container-tarjet {
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(200px, 350px));
     justify-items: center;
-    gap: 50px 5px;
+    gap: 30px;
 }
 
 .tarjet {
-    max-width: 70%;
     position: relative;
-    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 20px #0006;
+    box-shadow: 0 0 10px #0006;
     animation: opacity 1s linear both;
     animation-timeline: view();
     animation-range: cover 0% cover 20%;
     background-color: #fff;
 }
 
+.container-text{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
 .tarjet h3 {
-    text-align: center;
-    font-size: 2em;
-    color: #c12e21;
-    padding: 15px 0px;
-    width: 90%;
+    font-size: 1.8em;
+    padding: 10px;
 }
 
 .tarjet p {
     font-weight: 500;
     line-height: 1.5;
     font-size: 0.9em;
-    padding: 0 30px
 }
 
 .container-img-tarjet {
     width: 100%;
-    max-height: 300px;
+    height: 200px;
     position: relative;
 }
 
@@ -235,24 +206,18 @@ h1 {
 
 /*************MEDIA QUERIES DE SERVICIOS*************/
 
-@container services-section (max-width: 1350px) {
-
-
-
+@container services-section (max-width: 1080px){
     .container-tarjet {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
-
 }
 
-@container services-section (max-width: 675px) {
-
+@container services-section (max-width: 550px){
     .container-tarjet {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
-
 }
+
 
 /***************FIN SERVICIOS****************/
 
@@ -338,36 +303,20 @@ h1 {
     letter-spacing: 1.3px;
 }
 
-.button-informations {
+.link-h2c{
+    background-color: #c12e21;
+    padding: 15px 30px;
     border-radius: 20px;
-    animation: opacity 1s linear both;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    letter-spacing: 1.2px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
 }
 
-
-.button-informations::before {
-    content: '';
-    display: block;
-    background-color: #ddd;
-    width: 150%;
-    height: 200%;
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    top: 100px;
-    left: 50px;
-    transition: left 1s, top 1s;
+.link-h2c:hover{
+    background-color: #b00;
 }
 
-.button-informations:hover::before {
-    top: -30px;
-    left: -50px;
-}
-
-.button-informations:hover {
-    color: #000;
-}
 
 /*************MEDIA QUERIES SECCION DE INFORMACION****************/
 
@@ -431,6 +380,9 @@ h1 {
     filter: brightness(50%);
 }
 
+.text-white {
+    text-decoration: none;
+}
 
 /*****************ANIMACIONES*****************/
 
