@@ -120,6 +120,7 @@ label{
 input{
     padding: 5px;
     border-radius: 3px;
+    width: 100%;
     border: none;
 }
 
