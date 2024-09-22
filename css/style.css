@@ -17,12 +17,17 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    
+}
+
+.name-system{
+    font-weight: 600;
 }
 
 .main-section {
-    height: 90vh;
+    height: auto;
     width: 100%;
-    background: linear-gradient(to right, #000d 40%, transparent), url("../img/Red\ Modern\ Texture\ Background\ Online\ Delivery\ -\ Banner.png");
+    background: linear-gradient(to right, #000d, #000D), url("../img/Red\ Modern\ Texture\ Background\ Online\ Delivery\ -\ Banner.png");
     background-position: right;
     background-size: cover;
     display: flex;
@@ -32,33 +37,51 @@
     box-sizing: border-box;
 }
 
+.container-main{
+    max-width: clamp(200px, 80%, 1400px);
+    height: 90%;
+    margin: auto;
+}
+
 .titles-main {
+    color: #fff;
     display: flex;
-    height: 70%;
+    height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
-    width: 60%;
-    text-align: left;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    width: clamp(100px, 100%, 1000px);
+    margin: auto;
+    text-align: center;
     animation: opacity 1s linear both;
+}
+
+.container-carrucel{
+    padding: 15px 0;
+    width: clamp(150px, 100%, 800px);
+    margin: auto;
+}
+
+.carrucel{
+    height: 100%;
+    width: 100%;
+
 }
 
 h1 {
     color: #fff;
-    font-size: 4em;
-    width: 90%;
+    font-size: clamp(1.8rem, 4dvw, 2.7rem);
+    font-weight: 700;
 }
-
-.h2-titles-main {
-    color: #ddd;
-    font-weight: 400;
-    text-align: left;
-    width: 80%;
-}
-
 .link-main {
+    background-color: #b00;
     text-decoration: none;
-    border-radius: 20px;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 1s;
 }
 
 .container-link-main {
@@ -68,74 +91,14 @@ h1 {
 }
 
 .link-main:hover {
-    background-color: #da2817;
+    background-color: #900;
 }
 
 /*************MEDIA QUERIES DE LA SECCION PRINCIPAL*************/
 
-@media screen and (max-width: 875px) {
-
-    h1 {
-        font-size: 3em;
-        text-align: center;
-        width: 100%;
-    }
-
-    .h2-titles-main {
-        text-align: center;
-        width: 100%;
-    }
-
-    .container-link-main {
-        width: 100%;
-    }
-
-    .titles-main {
-        text-align: center;
-        width: 100%;
-        padding: 30px;
-    }
 
 
 
-    .main-section {
-        background: linear-gradient(to bottom, #000a, #000a), url("../img/Red\ Modern\ Texture\ Background\ Online\ Delivery\ -\ Banner.png");
-        background-position: right;
-        background-size: cover;
-        height: 90vh;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-}
-
-@media screen and (max-width: 625px) {
-
-
-    .titles-main{
-        justify-content: space-around;
-        height: 100%;
-    }
-    .main-section {
-        height: 85vh;
-        flex-direction: column;
-        justify-content: center;
-    }
-    h1{
-        width: 90%;
-        font-size: 2.4em;
-    }
-
-    .image-main-container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px 5px;
-    }
-
-    .img-main:first-child {
-        grid-column-end: span 3;
-    }
-
-}
 
 /************FIN SECCION PRINCIPAL*************/
 
@@ -156,7 +119,7 @@ h1 {
     font-weight: 600;
     padding: 50px 10px;
     box-sizing: border-box;
-    font-size: 2.7em;
+    font-size: clamp(1.8rem, 4dvw, 2.7rem);
 }
 
 .container-tarjet {
@@ -356,6 +319,11 @@ h1 {
     .container-information-button {
         padding: 30px 10px;
     }
+
+    .link-h2c{
+        padding: 10px 25px;
+        letter-spacing: 1;
+    }
 }
 
 /*************FIN SECCION DE INFORMACION****************/
@@ -386,6 +354,7 @@ h1 {
 }
 
 .reviews-container{
+    padding: 20px;
     margin-top: 100px;
     width: 100%;
     display: grid;
@@ -396,10 +365,14 @@ h1 {
 }
 
 .review{
+    width: clamp(100px, 100%, 500px);
     display: flex;
     flex-direction: column;
     border: solid 1px;
     background-color: #fff;
+    animation: opacity 1s linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 20%;
 }
 
 .img-review{
