@@ -74,14 +74,27 @@ h1 {
     font-size: clamp(1.8rem, 4dvw, 2.7rem);
     font-weight: 700;
 }
+.span-h1{
+    background: linear-gradient(to right, #11d4ff, #55dff9);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 .link-main {
     background-color: #b00;
     text-decoration: none;
     color: #fff;
-    padding: 15px 15px;
+    padding: 15px 15px 0;
     border-radius: 10px;
     font-weight: 600;
     transition: 1s;
+    display: flex;
+    gap: 10px;
+}
+
+
+.img-download{
+    width: 20px;
+    filter: invert(1);
 }
 
 .container-link-main {
@@ -365,7 +378,7 @@ h1 {
 }
 
 .review{
-    width: clamp(100px, 100%, 500px);
+    width: clamp(100px, 100%, 350px);
     display: flex;
     flex-direction: column;
     border: solid 1px;
@@ -412,6 +425,14 @@ h1 {
 .review-name{
     flex-grow: 1;
     border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-name h3{
+    position: relative;
+    top: -10px;
 }
 
 @container reviews-section (max-width: 1500px){
