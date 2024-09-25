@@ -75,7 +75,7 @@ h1 {
     font-weight: 700;
 }
 .span-h1{
-    background: linear-gradient(to right, #11d4ff, #55dff9);
+    background: linear-gradient(to right, #800, #fff);
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
@@ -344,6 +344,20 @@ h1 {
 
 /***************SECCION DE RESEÑAS******************/
 
+.h2-review{
+    width: 90%;
+    font-family: Playfair Display, sans-serif;
+    font-weight: bolder;
+    margin: auto;
+    font-size: clamp(2.2em, 4dvw, 3em);
+}
+
+.h3-review{
+    margin: 30px auto;
+    font-size: 1.4em;
+    width: 90%;
+}
+
 .reviews-section{
     container-type: inline-size;
     container-name: reviews-section;
@@ -355,16 +369,7 @@ h1 {
     box-sizing: border-box;
 }
 
-.reviews-section h2{
-    font-family: Playfair Display, sans-serif;
-    font-size: 2.5em;
-    font-weight: bolder;
-}
 
-.reviews-section h3{
-    margin-top: 25px;
-    font-size: 1.4em;
-}
 
 .reviews-container{
     padding: 20px;
@@ -421,6 +426,9 @@ h1 {
     padding: 15px;
     border: solid 1px;
 }
+.review-text p{
+    font-weight: 500;
+}
 
 .review-name{
     flex-grow: 1;
@@ -430,10 +438,6 @@ h1 {
     align-items: center;
 }
 
-.review-name h3{
-    position: relative;
-    top: -10px;
-}
 
 @container reviews-section (max-width: 1500px){
     .reviews-container{
@@ -454,33 +458,7 @@ h1 {
 
 
 
-/***************FOOTER**************/
 
-.container-redes-link{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
-}
-
-.link-redes {
-    background-color: #ac2bac;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-}
-.link-redes:hover{
-    filter: brightness(50%);
-}
-
-.text-white {
-    text-decoration: none;
-}
 
 /*****************ANIMACIONES*****************/
 
