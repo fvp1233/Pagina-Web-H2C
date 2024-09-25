@@ -151,6 +151,23 @@ ul li {
     text-decoration: none;
 }
 
+.container-requerimientos{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container-requerimientos div h3{
+    text-align: center;
+}
+
+.requ-min, .requ-recom{
+    flex-grow: 2;
+    flex-basis: 200px;
+}
+
+
 
 
 
