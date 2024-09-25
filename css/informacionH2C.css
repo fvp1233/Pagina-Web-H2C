@@ -188,10 +188,7 @@ img {
     max-height: 100%;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(180deg);
-}
+
 
 /***************FOOTER**************/
 
