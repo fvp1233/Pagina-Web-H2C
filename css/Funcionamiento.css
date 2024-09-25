@@ -92,7 +92,7 @@ aside h2 {
 h1 {
     margin: 20px 0 15px 0;
     font-family: Playfair Display, sans-serif;
-    font-size: 2.7rem;
+    font-size: clamp(2em, 3dvw, 3em);
 }
 
 h2 {
