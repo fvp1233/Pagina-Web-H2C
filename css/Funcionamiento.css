@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #ddd;
     margin: 0;
     padding: 0;
@@ -7,51 +7,54 @@ body{
 
 /*******************SECCION PRINCIPAL********************/
 
-.wrapper{
+.wrapper {
     display: flex;
     margin: auto;
     margin-top: 100px;
     max-width: 1200px;
     gap: 15px;
     justify-content: space-around;
-    
+
 }
-p{
+
+p {
     font-family: montserrat;
     line-height: 1.5;
     width: 100%;
     text-align: justify;
 }
 
-.links-principal-section{
+.links-principal-section {
     text-decoration: none;
     color: #000;
 }
 
 
-.links-principal-section:first-child{
+.links-principal-section:first-child {
     color: #c12e21;
 }
 
-.links-principal-section:hover{
+.links-principal-section:hover {
     opacity: 0.7;
 }
 
 
-aside{
+aside {
     width: 30%;
     height: 400px;
     padding-left: 50px;
     border-radius: 25px;
-    
+
 }
-aside h2{
+
+aside h2 {
     text-transform: uppercase;
     font-size: 1.6rem;
     color: #c12e21;
     text-align: center;
 }
-.lista-indice{
+
+.lista-indice {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -59,7 +62,7 @@ aside h2{
     list-style-type: circle;
 }
 
-.lista-indice li a{
+.lista-indice li a {
     font-weight: 500;
     line-height: 2.5;
     text-decoration: none;
@@ -67,58 +70,61 @@ aside h2{
     transition: .3s;
 }
 
-.lista-indice li a:hover{
+.lista-indice li a:hover {
     color: #c12e21;
 }
 
-.main{
+.main {
     max-width: 70%;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-.section{
+
+.section {
     margin: 20px 0 20px 0;
 }
 
-.separator::before{
+.separator::before {
     content: '/';
 }
 
-h1{
+h1 {
     margin: 20px 0 15px 0;
     font-family: Playfair Display, sans-serif;
     font-size: 2.7rem;
 }
-h2{
+
+h2 {
     font-size: 2em;
     font-family: montserrat, sans-serif;
 }
 
-.container-img{
+.container-img {
     width: 100%;
     margin: 40px 0 40px 0;
 }
-.container-img img{
+
+.container-img img {
     width: 100%;
 }
 
 
-.service-section{
+.service-section {
     display: flex;
     justify-content: center;
 }
 
-.image img{
+.image img {
     width: 100%;
 }
 
-ul li{
+ul li {
     line-height: 3;
     font-size: 1.2rem;
 }
 
-.container-redes-link{
+.container-redes-link {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -136,7 +142,8 @@ ul li{
     display: flex;
     align-items: center;
 }
-.link-redes:hover{
+
+.link-redes:hover {
     filter: brightness(50%);
 }
 
@@ -148,11 +155,11 @@ ul li{
 
 
 @media screen and (max-width: 1050px) {
-    aside{
+    aside {
         display: none;
     }
 
-    .main{
+    .main {
         max-width: 90%;
     }
 }
