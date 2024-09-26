@@ -165,7 +165,7 @@ ul li {
 
 .requ-min, .requ-recom{
     flex-grow: 2;
-    flex-basis: 200px;
+    flex-basis: 300px;
     font-weight: 500;
 }
 
