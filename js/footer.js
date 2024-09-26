@@ -15,8 +15,8 @@ footer.innerHTML =
                             Sistema Administrativo H2C
                         </h6>
                         <p>
-                            Nustro sistema cuenta con diferentes apartados para la administración de tu empresa, puede
-                            ser adaptado a tus necesidaes y ajustable a tu empresa.
+                            Nuestro sistema cuenta con diferentes apartados para la administración de tu empresa, puede
+                            ser adaptado a tus necesidades y ajustable a tu empresa.
                         </p>
                     </div>
                     <!-- Grid column -->
