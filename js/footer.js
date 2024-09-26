@@ -62,7 +62,7 @@ footer.innerHTML =
 
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos</h6>
                         <div class="container-redes-link">
                             <!-- Facebook -->
                             <a class="btn btn-primary btn-floating m-1 link-redes"
