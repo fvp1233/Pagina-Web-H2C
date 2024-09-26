@@ -5,12 +5,6 @@ body{
     font-family: montserrat, sans-serif, Arial;
 }
 
-
-
-
-
-
-
 /*BODY*/
 
 /*Seccion donde se encuentra la informacion de quien es H2C*/
@@ -121,6 +115,7 @@ body{
 }
 
 
+/* Seccion de relacion entre H2C y nosotros*/ 
 
 
 .container1 {
@@ -184,9 +179,7 @@ body{
 }
 }
 
-
-
-
+/* Carrusel con tarjetas*/ 
 
 
 .carousel-inner{
@@ -204,35 +197,4 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-
-
-
-
-/***************FOOTER**************/
-
-.container-redes-link{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
-}
-
-.link-redes {
-    background-color: #ac2bac;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-}
-.link-redes:hover{
-    filter: brightness(50%);
-}
-
-
-/*****************ANIMACIONES*****************/
-
 
