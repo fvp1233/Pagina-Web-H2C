@@ -33,7 +33,7 @@ footer.innerHTML =
                             <a class="text-white">José Merino</a>
                         </p>
                         <p>
-                            <a class="text-white">Óscar Joyar</a>
+                            <a class="text-white">Oscar Joyar</a>
                         </p>
                         <p>
                             <a class="text-white">Max Jiménez</a>
