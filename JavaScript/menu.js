@@ -3,7 +3,7 @@ let nav = document.getElementById("nav");
 
 nav.innerHTML = 
 `
- <nav class="navbar navbar-expand-lg navbar-custom border-bottom border-body" data-bs-theme="dark"
+<nav class="navbar navbar-expand-lg navbar-custom border-bottom border-body" data-bs-theme="dark"
             style="background-color: #000000;">
             <div class="container d-flex justify-content-center">
                 <a class="navbar-brand" href="index.html">
@@ -30,7 +30,6 @@ nav.innerHTML =
                             <li class="nav-item list">
                                 <a class="nav-link active link" href="Contactanos.html">Contáctanos</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
