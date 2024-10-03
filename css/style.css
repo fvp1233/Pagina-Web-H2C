@@ -240,7 +240,7 @@ h1 {
 }
 
 .img-h2c-information-container {
-    width: 45%;
+    width: clamp(200px, 45%, 800px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,7 +248,7 @@ h1 {
 }
 
 .h3-container-information {
-    font-size: 1.8em;
+    font-size: clamp(2rem, 2dvw, 3.5rem);
     color: #c12e21;
     position: relative;
     animation: opacity 1s linear both;
@@ -280,6 +280,7 @@ h1 {
     text-align: justify;
     font-weight: 500;
     font-family: montserrat, sans-serif;
+    font-size: clamp(1rem, 2dvw, 1.2rem);
     line-height: 1.5;
     position: relative;
     animation: opacity 1s linear both;
