@@ -13,11 +13,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/styleContactos.css">
     <link rel="stylesheet" href="css/menuFooter.css">
-    <title>Contáctanos</title>
+    <title>Contactanos</title>
 </head>
 
 <body>
+
+
     <header id="nav"></header>
+
+
+
+
     <main class="wrapper">
         <div class="container-cards">
             <div class="card">
@@ -53,30 +59,30 @@
             </div>
         </div>
         <div class="container-info-form">
-            <form action="" class="form" id="frmContact">
+            <form class="form" id="frmContact" method="POST" action="">
                 <h2>Formulario de Contacto</h2>
                 <div class="container-info-personal">
                     <div class="container-input">
-                        <label for="name">Nombre completo <span class="text-danger">*</span></label>
-                        <input type="text" id="name" placeholder="Escribe tu nombre completo" pattern="[A-Za-z ]+">
+                        <label for="name">Nombre completo<span class="text-danger">*</span></label>
+                        <input class="form-control" name="name" type="text" id="name" placeholder="Escribe tu nombre completo">
                     </div>
                 </div>
                 <div class="container-info-contacto">
                     <div class="container-input container-input-contacto">
-                        <label for="email">Correo <span class="text-danger">*</span></label>
-                        <input type="email" id="email" placeholder="example@gmail.com">
+                        <label for="email">Correo<span class="text-danger">*</span></label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="example@gmail.com">
                     </div>
                     <div class="container-input">
-                        <label for="phone">Telefono <span class="text-danger">*</span></label>
-                        <input type="text" id="phone" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}">
+                        <label for="phone">Telefono</label>
+                        <input class="form-control" type="text" id="phone" name="phone" placeholder="1234-5678">
                     </div>
                 </div>
                 <div class="container-input">
-                    <label for="message">Mensaje <span class="text-danger">*</span></label>
-                    <textarea name="message" placeholder="Escribe tu mensaje" id="message" class="txtarea"></textarea>
+                    <label for="message">Mensaje<span class="text-danger">*</span></label>
+                    <textarea name="message" placeholder="Escribe tu mensaje" id="message" name="message" class="txtarea"></textarea>
                 </div>
-                <div class="container-input">
-                    <input type="submit" class="submit btn btn-light">
+                <div class="container-input submit-container">
+                    <input type="submit" class="submit form-control">
                 </div>
             </form>
             <div class="container-map">
@@ -87,14 +93,38 @@
             </div>
         </div>
     </main>
+
+
     <div id="footer"></div>
+    
+    <?php
+
+// send_mail.php
+use vendor\PHPMailer\PHPMailer\test;
+use vendor\PHPMailer\PHPMailer\Exception;
+use vendor\composer;
+
+
+require 'vendor/autoload.php';
+$mail = new PHPMailer(true); $mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true)
+);$mail->SMTPDebug = 2; $mail->IsSMTP();$mail->SMTPAuth = true;$mail->SMTPSecure = 'tls';$mail->Host = 'smtp.gmail.com';$mail->Port = 587; $mail->CharSet = 'UTF-8';$mail->Username ='h2cnoreply@gmail.com'; $mail->Password = 'de r w j v b b v e r ft p e n b​'; $mail->setFrom('h2cnoreply@gmail.com', 'Mi nombre');$mail->AddAddress('jose.merino9108@gmail.com'); $mail->SMTPKeepAlive = true;  $mail->Mailer = "smtp"; 
+
+    $mail->isHTML(true); $mail->Subject = 'PRUEBA 6';$mail->Body    = 'This is the HTML message body <b>in bold!</b>';$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+if(!$mail->send()) {
+  echo 'Error al enviar email';
+  echo 'Mailer error: ' . $mail->ErrorInfo;
+} else {
+  echo 'Mail enviado correctamente';
+}
+?>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="js/footer.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/script.js"></script>
+
+
+
 
 </html>

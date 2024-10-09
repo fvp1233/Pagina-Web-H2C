@@ -28,7 +28,7 @@ nav.innerHTML =
                                 <a class="nav-link active link" href="informacionH2C.html">H2C</a>
                             </li>
                             <li class="nav-item list">
-                                <a class="nav-link active link" href="Contactanos.html">Contáctanos</a>
+                                <a class="nav-link active link" href="Contactanos.php">Contáctanos</a>
                             </li>
                         </ul>
                     </div>
