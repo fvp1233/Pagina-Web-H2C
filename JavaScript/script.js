@@ -4,7 +4,6 @@ function sweet(e){
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
     const message = document.getElementById("message").value.trim();
 
 
@@ -20,14 +19,6 @@ function sweet(e){
         Swal.fire({
             title: "Error",
             text: "Ingresa tu email",
-            icon: "warning"
-          });
-          return;
-    }
-    if(!phone){
-        Swal.fire({
-            title: "Error",
-            text: "Ingresa tu numero de telefono",
             icon: "warning"
           });
           return;
