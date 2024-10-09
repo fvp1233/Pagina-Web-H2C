@@ -5,12 +5,6 @@ body{
     font-family: montserrat, sans-serif, Arial;
 }
 
-
-
-
-
-
-
 /*BODY*/
 
 /*Seccion donde se encuentra la informacion de quien es H2C*/
@@ -121,6 +115,7 @@ body{
 }
 
 
+/* Seccion de relacion entre H2C y nosotros*/ 
 
 
 .container1 {
@@ -152,25 +147,39 @@ body{
 .imgrelacion{
     padding-bottom: 60px;
 }
+.carousel-control-prev-icon, 
+.carousel-control-next-icon{
+    filter: invert(1);
+}
+.carousel-control-prev,
+.carousel-control-next{
+    display: none !important;
+}
 
 @media screen and (min-width: 576px){
     .carousel-inner{
         display: flex;
     
-        
+    
     .carousel-item {
         display: block;
         margin-right: 5%;
         flex: 0 0 calc(100%/4);
     }
+    
 
-}
-.btndesactivado {
-    display: none;
 }
 
 }
 
+@media screen and (max-width: 576px){
+.carousel-control-prev,
+.carousel-control-next{
+    display: block !important;
+}
+}
+
+/* Carrusel con tarjetas*/ 
 
 
 .carousel-inner{
@@ -183,67 +192,9 @@ body{
     display: flex;
     justify-content: center;
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
-}
-
-
-
-/***************FOOTER**************/
-
-.container-redes-link{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
-}
-
-.link-redes {
-    background-color: #ac2bac;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-}
-.link-redes:hover{
-    filter: brightness(50%);
-}
-
-
-/*****************ANIMACIONES*****************/
-
-@keyframes header-scroll {
-    from {
-        background-color: #000;
-        padding: 20px;
-    }
-
-    to {
-        background-color: #000d;
-        padding: 0;
-    }
-}
-
-
-
-@keyframes opacity {
-    from {
-        opacity: 0.2;
-        top: 100px;
-    }
-
-    50%{
-        top: 50px;
-    }
-
-    to {
-        opacity: 1;
-        top: 0;
-    }
 }
 

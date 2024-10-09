@@ -156,6 +156,7 @@ ul li {
     margin-top: 50px;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .container-requerimientos div h3{
@@ -164,10 +165,9 @@ ul li {
 
 .requ-min, .requ-recom{
     flex-grow: 2;
-    flex-basis: 200px;
+    flex-basis: 300px;
+    font-weight: 500;
 }
-
-
 
 
 
