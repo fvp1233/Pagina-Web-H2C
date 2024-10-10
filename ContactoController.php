@@ -1,10 +1,10 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     // Obtener datos del formulario
-    $name = htmlspecialchars(trim($_POST['name']));
-    $email = htmlspecialchars(trim($_POST['email']));
-    $phone = htmlspecialchars(trim($_POST['phone']));
-    $message = htmlspecialchars(trim($_POST['message']));
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message =$_POST['message'];
 
     // Validar campos (agrega más validaciones según sea necesario)
     if (empty($name) || empty($email) || empty($message)) {
@@ -23,7 +23,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo json_encode(['status' => 'error', 'message' => 'Hubo un problema al enviar tu mensaje.']);
     }
-} else {
-    echo json_encode(['status' => 'error', 'message' => 'Método no permitido.']);
-}
+
 ?>
