@@ -96,5 +96,82 @@
 <script src="js/footer.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+
+<script>
+
+    const enviarEmail = async (nombre_form, email_form, telefono_form, message) => {
+        console.warn(nombre_form, email_form, telefono_form, message);
+
+        emailjs.init("I4iZB6xgm0vnvYrms"); // Reemplaza con tu User ID de EmailJS
+
+        const templateParams = {
+            nombre: nombre_form,
+            telefono: telefono_form,
+            correo: email_form,
+            mensage: message,
+        };
+
+        try {
+            const response = await emailjs.send('service_1bc1muh', 'template_6d1l0mb', templateParams);
+            console.log('Correo enviado exitosamente:', response.status, response.text);
+            if (response.status !== 200) {
+                throw new Error('Error al enviar el correo');
+            }
+            return true;
+        } catch (error) {
+            console.error('Error al enviar el correo:', error);
+            throw error;
+        }
+    }
+
+
+    document.getElementById('frmContact').addEventListener('submit', async function (e) {
+        e.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+        // Obtener los datos del formulario
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Validar que todos los campos obligatorios están completos
+        if (!name || !email || !message) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Por favor completa todos los campos obligatorios',
+            });
+            return;
+        }
+
+        const respuesta = await enviarEmail(name, email, phone, message);
+
+        try {
+            if (repuesta) {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Enviado!',
+                    text: data.message,
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'dsadsadsa!',
+                    text: data.message,
+                });
+            }
+        } catch (error) {
+
+        }
+
+    });
+
+
+
+
+</script>
 
 </html>
