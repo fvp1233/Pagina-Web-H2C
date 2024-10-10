@@ -22,9 +22,41 @@
 
     <main class="wrapper">
         <div class="container-cards">
+            <div class="card">
+                <div class="container-img-card">
+                    <img src="img/ubicacion.png" alt="">
+                </div>
+                <h2>Nuestra Oficina Principal</h2>
+                <p>Nos encontramos en una de las mejores zonas del país, céntrico y accesible, puedes encontrarnos a 2
+                    minutos del monumento de el salvador del mundo.</p>
+            </div>
+            <div class="card">
+                <div class="container-img-card">
+                    <img src="img/Telefono.png" alt="">
+                </div>
+                <h2>Número de Telefono</h2>
+                <p>Puedes contactarnos a través del numero +503 2510-8403.</p>
+            </div>
+            <div class="card">
+                <div class="container-img-card">
+                    <img src="img/gmail.png" alt="">
+                </div>
+                <h2>Representante</h2>
+                <p>Jennifer Alfaro es la representante de nuestro equipo de programación y encargada del proyecto,
+                    puedes comunicarte con ella mediante el correo 20210182@ricaldone.edu.sv.</p>
+            </div>
+            <div class="card">
+                <div class="container-img-card">
+                    <img src="img/gmail.png" alt="">
+                </div>
+                <h2>Correo Electronico</h2>
+                <p>A través del correo ventas@h2cgroup.com puedes contactar a la empresa con la cual nos hemos asociado
+                    para nuestro proyecto.</p>
+            </div>
             <!-- Tarjetas de contacto -->
             <!-- ... (Contenido de las tarjetas) ... -->
         </div>
+
 
         <div class="container-info-form">
             <form class="form" id="frmContact" method="POST" action="ContactoController.php">
@@ -55,7 +87,10 @@
             </form>
 
             <div class="container-map">
-                <!-- Mapa -->
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1938.148842845115!2d-89.22535586500415!3d13.700411845236907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63312117a8fceb%3A0x4bb696aef6a52ad0!2sCoagro%20S.A.%20de%20C.V.!5e0!3m2!1ses!2ssv!4v1725469012574!5m2!1ses!2ssv"
+                    style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </main>
