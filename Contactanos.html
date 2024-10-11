@@ -58,24 +58,24 @@
                 <div class="container-info-personal">
                     <div class="container-input">
                         <label for="name">Nombre completo <span class="text-danger">*</span></label>
-                        <input type="text" id="name" placeholder="Escribe tu nombre completo" pattern="[A-Za-z ]+">
+                        <input type="text" id="name" class="form-control" placeholder="Escribe tu nombre completo" pattern="[A-Za-z ]+">
                     </div>
                 </div>
                 <div class="container-info-contacto">
                     <div class="container-input container-input-contacto">
                         <label for="email">Correo <span class="text-danger">*</span></label>
-                        <input type="email" id="email" placeholder="example@gmail.com">
+                        <input type="email" id="email" class="form-control" placeholder="example@gmail.com">
                     </div>
                     <div class="container-input">
                         <label for="phone">Telefono <span class="text-danger">*</span></label>
-                        <input type="text" id="phone" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}">
+                        <input type="text" id="phone" class="form-control" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}">
                     </div>
                 </div>
                 <div class="container-input">
                     <label for="message">Mensaje <span class="text-danger">*</span></label>
                     <textarea name="message" placeholder="Escribe tu mensaje" id="message" class="txtarea"></textarea>
                 </div>
-                <div class="container-input">
+                <div class="container-input container-submit">
                     <input type="submit" class="submit btn btn-light">
                 </div>
             </form>
@@ -97,81 +97,5 @@
 <script src="js/menu.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-
-
-<script>
-
-    const enviarEmail = async (nombre_form, email_form, telefono_form, message) => {
-        console.warn(nombre_form, email_form, telefono_form, message);
-
-        emailjs.init("I4iZB6xgm0vnvYrms"); // Reemplaza con tu User ID de EmailJS
-
-        const templateParams = {
-            nombre: nombre_form,
-            telefono: telefono_form,
-            correo: email_form,
-            mensage: message,
-        };
-
-        try {
-            const response = await emailjs.send('service_1bc1muh', 'template_6d1l0mb', templateParams);
-            console.log('Correo enviado exitosamente:', response.status, response.text);
-            if (response.status !== 200) {
-                throw new Error('Error al enviar el correo');
-            }
-            return true;
-        } catch (error) {
-            console.error('Error al enviar el correo:', error);
-            throw error;
-        }
-    }
-
-
-    document.getElementById('frmContact').addEventListener('submit', async function (e) {
-        e.preventDefault(); // Evita el comportamiento predeterminado del formulario
-
-        // Obtener los datos del formulario
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-
-        // Validar que todos los campos obligatorios están completos
-        if (!name || !email || !message) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Error',
-                text: 'Por favor completa todos los campos obligatorios',
-            });
-            return;
-        }
-
-        const respuesta = await enviarEmail(name, email, phone, message);
-
-        try {
-            if (repuesta) {
-                Swal.fire({
-                    icon: 'success',
-                    title: '¡Enviado!',
-                    text: data.message,
-                });
-            } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'dsadsadsa!',
-                    text: data.message,
-                });
-            }
-        } catch (error) {
-
-        }
-
-    });
-
-
-
-
-</script>
 
 </html>
