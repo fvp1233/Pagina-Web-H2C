@@ -89,4 +89,5 @@ const validate = async (e) => {
 };
 
 // Agregar el listener para validar el formulario al enviarlo
-document.getElementById('frmContact').addEventListener('submit', validate);
+let form = document.getElementById('frmContact');
+form.addEventListener('submit', validate);

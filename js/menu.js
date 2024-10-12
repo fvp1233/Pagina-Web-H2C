@@ -3,13 +3,13 @@ let nav = document.getElementById("nav");
 
 nav.innerHTML = 
 `
-<nav class="navbar navbar-expand-lg navbar-custom border-bottom border-body" data-bs-theme="dark"
+<nav class="navbar navbar-expand-lg navbar-custom border-bottom border-body nav-header" data-bs-theme="dark"
             style="background-color: #000000;">
-            <div class="container d-flex justify-content-center">
-                <a class="navbar-brand" href="index.html">
+            <div class="container container-nav">
+                <a class="navbar-brand img-index" href="index.html">
                     <img src="img/H2C_HR (1) (1).png" alt="Bootstrap" width="60" height="60">
                 </a>
-                <div class="container-fluid">
+                <div class="container-fluid container-links">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
