@@ -84,7 +84,7 @@ footer.innerHTML =
                             <!-- Instagram -->
                             <a class="btn btn-primary btn-floating m-1 link-redes"
                                 style="background-color: #ac2bac; width: 50px; height: 50px; border: none; border-radius: 100%; display: flex; align-items: center;"
-                                href="https://www.instagram.com/h2c.company/" role="button"><img
+                                href="https://www.instagram.com/h2c.company/" role="button" target="_blank"><img
                                     src="img/logoInstagram.png" alt="" style="width: 100%;"></a>
 
                             <!-- Linkedin -->
